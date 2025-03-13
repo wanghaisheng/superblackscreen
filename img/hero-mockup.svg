@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <style>
+    .laptop { fill: #e6e6e6; }
+    .screen { fill: #1e1e1e; }
+    .screen-content { fill: none; stroke: #6c63ff; stroke-width: 2; }
+    .text-line { fill: #ffffff; opacity: 0.7; }
+    .status-dot { fill: #2ecc71; }
+    .status-text { fill: #ffffff; font-family: Arial; font-size: 14px; }
+    .color-option { stroke: #e6e6e6; stroke-width: 1; }
+    .black-option { fill: #000000; }
+    .white-option { fill: #ffffff; }
+    .blue-option { fill: #3498db; }
+    .green-option { fill: #2ecc71; }
+    .gradient-option { fill: url(#gradient); }
+    .time-display { fill: #ffffff; font-family: Arial; font-size: 24px; font-weight: bold; }
+    .timer-display { fill: #ffffff; font-family: Arial; font-size: 18px; opacity: 0.8; }
+    .panel { fill: #ffffff; stroke: #e6e6e6; stroke-width: 1; }
+    .panel-title { fill: #333333; font-family: Arial; font-size: 14px; font-weight: bold; }
+    .panel-text { fill: #666666; font-family: Arial; font-size: 12px; }
+    .button { fill: #6c63ff; }
+    .button-text { fill: #ffffff; font-family: Arial; font-size: 12px; text-anchor: middle; }
+    .slider-track { fill: #e0e0e0; }
+    .slider-thumb { fill: #6c63ff; }
+  </style>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff" />
+      <stop offset="100%" stop-color="#3498db" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Laptop Body -->
+  <path class="laptop" d="M100,350 L500,350 L530,380 L70,380 Z" />
+  <rect class="laptop" x="120" y="150" width="360" height="200" rx="10" />
+  
+  <!-- Laptop Screen -->
+  <rect class="screen" x="140" y="170" width="320" height="160" rx="5" />
+  
+  <!-- Screen Content - Main Preview -->
+  <rect class="screen-content" x="150" y="180" width="200" height="140" rx="3" />
+  
+  <!-- Screen Content - Status -->
+  <circle class="status-dot" cx="160" cy="195" r="3" />
+  <text class="status-text" x="170" y="200">专注模式已启动</text>
+  
+  <!-- Screen Content - Time Display -->
+  <text class="time-display" x="250" y="240">14:35:28</text>
+  <text class="timer-display" x="250" y="265">25:00</text>
+  
+  <!-- Control Panel -->
+  <rect class="panel" x="360" y="180" width="100" height="140" rx="3" />
+  <text class="panel-title" x="410" y="200" text-anchor="middle">屏幕模式</text>
+  
+  <!-- Color Options -->
+  <circle class="color-option black-option" cx="380" cy="220" r="10" />
+  <circle class="color-option white-option" cx="410" cy="220" r="10" />
+  <circle class="color-option blue-option" cx="440" cy="220" r="10" />
+  <circle class="color-option green-option" cx="380" cy="250" r="10" />
+  <circle class="color-option gradient-option" cx="410" cy="250" r="10" />
+  
+  <!-- Opacity Slider -->
+  <text class="panel-title" x="410" y="280" text-anchor="middle">透明度</text>
+  <rect class="slider-track" x="370" y="290" width="80" height="4" rx="2" />
+  <circle class="slider-thumb" cx="420" cy="292" r="8" />
+  
+  <!-- Share Button -->
+  <rect class="button" x="370" y="310" width="80" height="25" rx="3" />
+  <text class="button-text" x="410" y="326">分享</text>
+  
+  <!-- Text Lines in Main Screen -->
+  <rect class="text-line" x="170" y="290" width="160" height="3" rx="1.5" />
+  <rect class="text-line" x="170" y="300" width="120" height="3" rx="1.5" />
+  <rect class="text-line" x="170" y="310" width="140" height="3" rx="1.5" />
+</svg>
+

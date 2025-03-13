@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40">
+  <path d="M10,20 C10,14.477 14.477,10 20,10 L100,10 C105.523,10 110,14.477 110,20 C110,25.523 105.523,30 100,30 L20,30 C14.477,30 10,25.523 10,20 Z" fill="#f0f0f0"/>
+  <text x="60" y="24" font-family="Arial" font-size="14" font-weight="bold" fill="#666" text-anchor="middle">Company 5</text>
+</svg>
+

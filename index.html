@@ -1,132 +1,795 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta name="keywords" content="mobile, simulator, mobile design, mobile app">
-  <meta name="author" content="Your Name or Company">
-  <meta http-equiv="Content-Language" content="en">
-
-  <!-- Canonical Link -->
-  <link rel="canonical" href="https://www.yourwebsite.com/pc-simulator" />
-
-  <!-- Open Graph for Social Media -->
-  <meta property="og:title" content="PC Simulator">
-  <meta property="og:description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta property="og:image" content="https://www.yourwebsite.com/pc-simulator-image.jpg">
-  <meta property="og:url" content="https://www.yourwebsite.com/pc-simulator">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PC Simulator">
-  <meta name="twitter:description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta name="twitter:image" content="https://www.yourwebsite.com/pc-simulator-image.jpg">
-  <meta name="twitter:creator" content="@yourtwitterhandle">
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://www.yourwebsite.com/favicon.ico" type="image/x-icon">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperBlackScreen - 可分享的多功能专注工具 | 提高工作效率和保护视力</title>
+    <meta name="description" content="SuperBlackScreen是一款专注于提升工作/学习效率的多功能屏幕管理工具，通过提供可定制的屏幕显示模式，帮助用户减少干扰、保护视力并支持社交分享功能。">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 预加载字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SuperBlackScreen",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Windows, macOS, Linux, iOS, Android, Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      },
+      "description": "SuperBlackScreen是一款专注于提升工作/学习效率的多功能屏幕管理工具，通过提供可定制的屏幕显示模式，帮助用户减少干扰、保护视力并支持社交分享功能。"
     }
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXX-Y');
-  </script>
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y) {
-      window.clarity=window.clarity||function(){(clarity.q=clarity.q||[]).push(arguments)};
-      clarity('set', 'anonymizeIP', true);
-      i=l.createElement('script');i.async=1;i.src=r;i.type='text/javascript';
-      t=l.getElementsByTagName('script')[0];t.parentNode.insertBefore(i,t);
-    })(document,window,'script','https://www.clarity.ms/tag/XXXXXX');
-  </script>
-
-  <title>PC Simulator</title>
-
-  <style>
-    /* Global Styles */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    .mobile-container {
-      width: 360px;
-      height: 640px;
-      border: 16px solid black;
-      border-radius: 16px;
-      background-color: #fff;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .content {
-      font-size: 1.2rem;
-      color: #333;
-    }
-
-    /* Adjustments for PC */
-    @media (min-width: 768px) {
-      .mobile-container {
-        width: 600px;
-        height: 1000px;
-      }
-
-      .content {
-        font-size: 1.5rem;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .mobile-container {
-        width: 800px;
-        height: 1400px;
-      }
-
-      .content {
-        font-size: 1.8rem;
-      }
-    }
-
-    /* Additional responsiveness for larger screens */
-    @media (min-width: 1200px) {
-      body {
-        justify-content: flex-start;
-      }
-
-      .mobile-container {
-        margin-top: 50px;
-      }
-    }
-  </style>
+    </script>
 </head>
-
 <body>
-  <div class="mobile-container">
-    <div class="content">
-      <p>Mobile Simulator Screen</p>
-      <p>PC Version: Adjusted for larger screens.</p>
-    </div>
-  </div>
-</body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="SuperBlackScreen Logo" class="logo-img">
+                    <span class="logo-text">SuperBlackScreen</span>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#features" data-i18n-key="nav.features">功能</a></li>
+                        <li><a href="#playground" data-i18n-key="nav.playground">试用</a></li>
+                        <li><a href="#comparison" data-i18n-key="nav.comparison">对比</a></li>
+                        <li><a href="#painpoints" data-i18n-key="nav.painpoints">解决方案</a></li>
+                        <li><a href="#stats" data-i18n-key="nav.stats">数据</a></li>
+                        <li><a href="#pricing" data-i18n-key="nav.pricing">价格</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="#try-free" class="btn btn-primary" data-i18n-key="cta.try_free">免费试用</a>
+                    <button class="mobile-menu-toggle" aria-label="菜单">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-i18n-key="hero.title">专注工作，保护视力，<span class="highlight">分享体验</span></h1>
+                    <p class="hero-subtitle" data-i18n-key="hero.subtitle">SuperBlackScreen是一款全新的多功能屏幕管理工具，通过可定制的屏幕模式，帮助您减少干扰、保护视力、提高专注力，还可以与朋友共享专注状态。</p>
+                    <div class="hero-cta">
+                        <a href="#playground" class="btn btn-primary btn-large" data-i18n-key="hero.cta_primary">立即体验</a>
+                        <a href="#features" class="btn btn-secondary btn-large" data-i18n-key="hero.cta_secondary">了解更多</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">30%</span>
+                            <span class="stat-text">提升工作效率</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">40%</span>
+                            <span class="stat-text">减少眼部疲劳</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-text">活跃用户</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-screenshot">
+                        <img src="img/hero-mockup.svg" alt="SuperBlackScreen应用界面展示" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色功能区域 -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n-key="features.title">专为提升专注力和保护视力设计的强大功能</h2>
+                <p data-i18n-key="features.subtitle">探索SuperBlackScreen的全方位功能，让您的工作和学习体验更加高效、舒适</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>多样化屏幕模式</h3>
+                    <p>提供纯黑屏幕、多种颜色选项、透明度调节和渐变效果，满足不同场景需求。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>时间管理功能</h3>
+                    <p>内置定时器、番茄工作法和自定义时间段，帮助您科学规划工作和休息时间。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 data-i18n-key="features.cards.2.title">社交分享功能</h3>
+                    <p data-i18n-key="features.cards.2.description">分享专注状态到社交媒体，创建专注小组，与朋友共同保持专注和动力。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>数据统计与分析</h3>
+                    <p>记录专注时间，分析专注习惯，设定目标并追踪完成情况，持续改进。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 data-i18n-key="features.cards.4.title">全平台兼容</h3>
+                    <p data-i18n-key="features.cards.4.description">支持Web、Windows、macOS、Linux、iOS和Android，随时随地保持专注。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>安全与隐私</h3>
+                    <p>用户数据本地存储优先，云同步加密传输，保护您的隐私和数据安全。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 互动体验区域 -->
+    <section id="playground" class="playground">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n-key="playground.title">立即体验SuperBlackScreen</h2>
+                <p data-i18n-key="playground.subtitle">无需下载，直接在浏览器中试用我们的核心功能</p>
+            </div>
+            
+            <div class="playground-container">
+                <div class="playground-controls">
+                    <div class="control-group">
+                        <h3 data-i18n-key="playground.controls.screen_mode">屏幕模式</h3>
+                        <div class="mode-selector">
+                            <button id="black-mode" class="mode-btn active" data-mode="black">
+                                <span class="mode-color" style="background-color: #000;"></span>
+                                <span class="mode-name" data-i18n-key="playground.controls.modes.black">黑屏</span>
+                            </button>
+                            <button id="white-mode" class="mode-btn" data-mode="white">
+                                <span class="mode-color" style="background-color: #fff; border: 1px solid #eee;"></span>
+                                <span class="mode-name" data-i18n-key="playground.controls.modes.white">白屏</span>
+                            </button>
+                            <button id="blue-mode" class="mode-btn" data-mode="blue">
+                                <span class="mode-color" style="background-color: #3498db;"></span>
+                                <span class="mode-name" data-i18n-key="playground.controls.modes.blue">蓝屏</span>
+                            </button>
+                            <button id="green-mode" class="mode-btn" data-mode="green">
+                                <span class="mode-color" style="background-color: #2ecc71;"></span>
+                                <span class="mode-name" data-i18n-key="playground.controls.modes.green">绿屏</span>
+                            </button>
+                            <button id="gradient-mode" class="mode-btn" data-mode="gradient">
+                                <span class="mode-color gradient-preview"></span>
+                                <span class="mode-name" data-i18n-key="playground.controls.modes.gradient">渐变</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <h3 data-i18n-key="playground.controls.opacity">透明度调节</h3>
+                        <div class="opacity-control">
+                            <input type="range" id="opacity-slider" min="0" max="100" value="100" class="slider">
+                            <div class="opacity-value"><span id="opacity-value">100</span>%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <h3 data-i18n-key="playground.controls.timer.title">定时设置</h3>
+                        <div class="timer-controls">
+                            <div class="timer-mode-switch">
+                                <label>
+                                    <input type="radio" name="timer-mode" id="simple-timer-mode" checked> 
+                                    <span data-i18n-key="playground.controls.timer.modes.simple">简单模式</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="timer-mode" id="advanced-timer-mode"> 
+                                    <span data-i18n-key="playground.controls.timer.modes.advanced">高级模式</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="timer-mode" id="pomodoro-timer-mode"> 
+                                    <span data-i18n-key="playground.controls.timer.modes.pomodoro">番茄工作法</span>
+                                </label>
+                            </div>
+                            
+                            <div id="simple-timer-controls">
+                                <div class="timer-presets">
+                                    <button class="timer-preset" data-time="5" data-i18n-key="playground.controls.timer.presets.5">5分钟</button>
+                                    <button class="timer-preset" data-time="25" data-i18n-key="playground.controls.timer.presets.25">25分钟</button>
+                                    <button class="timer-preset" data-time="50" data-i18n-key="playground.controls.timer.presets.50">50分钟</button>
+                                </div>
+                                <div class="timer-custom">
+                                    <input type="number" id="custom-minutes" min="1" max="180" value="25" class="timer-input">
+                                    <span class="timer-label" data-i18n-key="playground.controls.timer.custom_minutes">分钟</span>
+                                    <button id="start-timer" class="btn btn-secondary" data-i18n-key="playground.controls.timer.buttons.start">开始</button>
+                                </div>
+                            </div>
+                            
+                            <div id="advanced-timer-controls" style="display:none;">
+                                <div class="timer-option">
+                                    <select id="start-time-selector">
+                                        <option value="now" selected data-i18n-key="playground.controls.timer.start.now">立即开始</option>
+                                        <option value="after" data-i18n-key="playground.controls.timer.start.after">延时开始</option>
+                                        <option value="at" data-i18n-key="playground.controls.timer.start.at">指定时间开始</option>
+                                    </select>
+                                    <input type="text" id="start-time-value" style="display:none" placeholder="分钟后开始">
+                                </div>
+                                <div class="timer-option">
+                                    <select id="end-time-selector">
+                                        <option value="timer" selected data-i18n-key="playground.controls.timer.end.timer">计时结束</option>
+                                        <option value="after" data-i18n-key="playground.controls.timer.end.after">持续时间</option>
+                                        <option value="at" data-i18n-key="playground.controls.timer.end.at">指定时间结束</option>
+                                    </select>
+                                    <input type="text" id="end-time-value" style="display:none" placeholder="分钟后结束">
+                                </div>
+                                <button id="advanced-start-timer" class="btn btn-secondary" data-i18n-key="playground.controls.timer.buttons.start_advanced">开始</button>
+                            </div>
+                            
+                            <div id="pomodoro-timer-controls" style="display:none;">
+                                <div class="pomodoro-settings">
+                                    <div class="setting-group">
+                                        <label data-i18n-key="playground.controls.timer.pomodoro.work">工作时长 (分钟):</label>
+                                        <input type="number" id="pomodoro-work" min="1" max="60" value="25" class="timer-input">
+                                    </div>
+                                    <div class="setting-group">
+                                        <label data-i18n-key="playground.controls.timer.pomodoro.rest">休息时长 (分钟):</label>
+                                        <input type="number" id="pomodoro-rest" min="1" max="30" value="5" class="timer-input">
+                                    </div>
+                                    <div class="setting-group">
+                                        <label data-i18n-key="playground.controls.timer.pomodoro.long_rest">长休息时长 (分钟):</label>
+                                        <input type="number" id="pomodoro-long-rest" min="5" max="60" value="15" class="timer-input">
+                                    </div>
+                                    <div class="setting-group">
+                                        <label data-i18n-key="playground.controls.timer.pomodoro.cycles">工作周期:</label>
+                                        <input type="number" id="pomodoro-cycles" min="1" max="10" value="4" class="timer-input">
+                                    </div>
+                                    <button id="start-pomodoro" class="btn btn-secondary" data-i18n-key="playground.controls.timer.buttons.start_pomodoro">开始番茄工作法</button>
+                                </div>
+                                <div class="pomodoro-status" style="margin-top: 10px; text-align: center; display: none;">
+                                    <span id="pomodoro-phase" data-i18n-key="playground.controls.timer.pomodoro.phase">准备开始</span>
+                                    <span id="pomodoro-cycle" data-i18n-key="playground.controls.timer.pomodoro.cycle">(周期 0/4)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="timer-display-options">
+                                <div class="timer-option">
+                                    <label>
+                                        <input type="checkbox" id="show-countdown-toggle" checked>
+                                        <span data-i18n-key="playground.controls.timer.options.show_countdown">显示倒计时</span>
+                                    </label>
+                                </div>
+                                <div class="timer-option">
+                                    <label>
+                                        <input type="checkbox" id="show-clock-toggle" checked>
+                                        <span data-i18n-key="playground.controls.timer.options.show_clock">显示时钟</span>
+                                    </label>
+                                </div>
+                                <div class="timer-option">
+                                    <label>
+                                        <input type="checkbox" id="show-message-toggle" checked>
+                                        <span data-i18n-key="playground.controls.timer.options.show_message">显示提示文本</span>
+                                    </label>
+                                    <input type="text" id="custom-message" placeholder="自定义提示文本" value="专注模式已启动" data-i18n-key="playground.controls.timer.options.custom_message">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <h3 data-i18n-key="playground.controls.share.title">社交分享</h3>
+                        <div class="share-controls">
+                            <button id="share-status" class="btn btn-outline" data-i18n-key="playground.controls.share.buttons.share_status">
+                                <i class="fas fa-share-alt"></i> 分享专注状态
+                            </button>
+                            <div class="share-preview">
+                                <p data-i18n-key="playground.controls.share.preview">我正在使用SuperBlackScreen，专注工作中！</p>
+                                <div class="share-platforms">
+                                    <button class="share-btn" data-platform="wechat"><i class="fab fa-weixin"></i></button>
+                                    <button class="share-btn" data-platform="weibo"><i class="fab fa-weibo"></i></button>
+                                    <button class="share-btn" data-platform="twitter"><i class="fab fa-twitter"></i></button>
+                                    <button class="share-btn" data-platform="instagram"><i class="fab fa-instagram"></i></button>
+                                    <button class="share-btn" data-platform="qq"><i class="fab fa-qq"></i></button>
+                                </div>
+                            </div>
+                            <button id="invite-friends" class="btn btn-outline" style="margin-top: 10px;" data-i18n-key="playground.controls.share.buttons.invite_friends">
+                                <i class="fas fa-user-friends"></i> 邀请朋友一起专注
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="playground-preview">
+                    <div id="screen-preview" class="screen-preview">
+                        <div class="preview-content">
+                            <div class="preview-time">
+                                <div id="current-time" class="current-time">00:00:00</div>
+                                <div id="timer-countdown" class="timer-countdown">25:00</div>
+                            </div>
+                            <div class="preview-message" data-i18n-key="playground.preview_message">专注模式已启动</div>
+                        </div>
+                    </div>
+                    <div class="preview-controls">
+                        <button id="toggle-fullscreen" class="btn btn-primary btn-wide" data-i18n-key="playground.controls.fullscreen.enter">
+                            <i class="fas fa-expand"></i> 全屏模式
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 竞争对手对比区域 -->
+    <section id="comparison" class="comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n-key="comparison.title">为什么选择SuperBlackScreen？</h2>
+                <p data-i18n-key="comparison.subtitle">我们与市场上其他专注工具的对比</p>
+            </div>
+            
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n-key="comparison.features.header">功能</th>
+                            <th>SuperBlackScreen</th>
+                            <th>blackscreen.app</th>
+                            <th>blackscreen.space</th>
+                            <th>allblackscreen.com</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-i18n-key="comparison.features.color_options">多种颜色选项</td>
+                            <td><i class="fas fa-check highlight"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n-key="comparison.features.opacity">透明度调节</td>
+                            <td><i class="fas fa-check highlight"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n-key="comparison.features.gradient">渐变效果</td>
+                            <td><i class="fas fa-check highlight"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n-key="comparison.features.timer">内置定时器</td>
+                            <td><i class="fas fa-check highlight"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n-key="comparison.features.pomodoro">番茄工作法</td>
+                            <td><i class="fas fa-check highlight"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n-key="comparison.features.social_share">社交分享功能</td>
+                            <td><i class="fas fa-check highlight"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n-key="comparison.features.stats">数据统计</td>
+                            <td><i class="fas fa-check highlight"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n-key="comparison.features.cross_platform">全平台兼容</td>
+                            <td><i class="fas fa-check highlight"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="comparison-notes">
+                <p data-i18n-key="comparison.note">* 基于2023年12月市场研究数据</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户痛点与解决方案区域 -->
+    <section id="painpoints" class="painpoints">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n-key="painpoints.title">我们倾听用户声音</h2>
+                <p data-i18n-key="painpoints.subtitle">针对市场上现有解决方案的用户痛点，我们提供完美解决方案</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="painpoint">
+                        <h3 data-i18n-key="painpoints.cards.0.pain.title"><i class="fas fa-exclamation-circle"></i> 功能单一</h3>
+                        <p data-i18n-key="painpoints.cards.0.pain.description">"现有的黑屏工具只提供单一颜色，无法满足我不同场景的需求。"</p>
+                    </div>
+                    <div class="solution">
+                        <h3 data-i18n-key="painpoints.cards.0.solution.title"><i class="fas fa-lightbulb"></i> 我们的解决方案</h3>
+                        <p data-i18n-key="painpoints.cards.0.solution.description">SuperBlackScreen提供黑、白、蓝、绿等多种颜色选项，还支持透明度调节和渐变效果，满足您在不同环境下的视觉需求。</p>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="painpoint">
+                        <h3 data-i18n-key="painpoints.cards.1.pain.title"><i class="fas fa-exclamation-circle"></i> 缺乏时间管理</h3>
+                        <p data-i18n-key="painpoints.cards.1.pain.description">"我需要一个能帮助我管理工作和休息时间的工具，而不只是简单的屏幕颜色改变。"</p>
+                    </div>
+                    <div class="solution">
+                        <h3 data-i18n-key="painpoints.cards.1.solution.title"><i class="fas fa-lightbulb"></i> 我们的解决方案</h3>
+                        <p data-i18n-key="painpoints.cards.1.solution.description">我们内置了定时器、番茄工作法和自定义时间设置，帮助您科学规划工作时间，提醒适时休息，均衡效率与健康。</p>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="painpoint">
+                        <h3 data-i18n-key="painpoints.cards.2.pain.title"><i class="fas fa-exclamation-circle"></i> 孤独的专注体验</h3>
+                        <p data-i18n-key="painpoints.cards.2.pain.description">"专注工作时感到孤独，希望能与朋友一起保持动力和责任感。"</p>
+                    </div>
+                    <div class="solution">
+                        <h3 data-i18n-key="painpoints.cards.2.solution.title"><i class="fas fa-lightbulb"></i> 我们的解决方案</h3>
+                        <p data-i18n-key="painpoints.cards.2.solution.description">SuperBlackScreen独创社交分享功能，让您可以分享专注状态，创建专注小组，与朋友共同保持专注，互相激励。</p>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="painpoint">
+                        <h3 data-i18n-key="painpoints.cards.3.pain.title"><i class="fas fa-exclamation-circle"></i> 无法追踪进度</h3>
+                        <p data-i18n-key="painpoints.cards.3.pain.description">"我无法知道自己每天专注了多长时间，也无法看到自己的改进。"</p>
+                    </div>
+                    <div class="solution">
+                        <h3 data-i18n-key="painpoints.cards.3.solution.title"><i class="fas fa-lightbulb"></i> 我们的解决方案</h3>
+                        <p data-i18n-key="painpoints.cards.3.solution.description">我们提供详细的专注时间统计和分析功能，帮助您了解自己的专注模式和习惯，设定目标并追踪进度，持续改进。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-quote">
+                <blockquote data-i18n-key="painpoints.testimonial.quote">
+                    "SuperBlackScreen完全改变了我的工作方式。多样化的屏幕模式满足了我在不同环境下的需求，时间管理功能帮助我保持高效，而社交分享功能则让我和同事一起保持专注动力。这是目前市场上最全面的专注工具！"
+                </blockquote>
+                <cite data-i18n-key="painpoints.testimonial.author">— 张明，软件工程师</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据统计区域 -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n-key="stats.title">用数据说话</h2>
+                <p data-i18n-key="stats.subtitle">SuperBlackScreen如何帮助用户提高专注力和工作效率</p>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number" data-i18n-key="stats.cards.0.number">40%</div>
+                    <div class="stat-label" data-i18n-key="stats.cards.0.label">减少干扰次数</div>
+                    <div class="stat-info" data-i18n-key="stats.cards.0.info">用户报告使用SuperBlackScreen后，工作中被干扰的次数平均减少40%</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number" data-i18n-key="stats.cards.1.number">35%</div>
+                    <div class="stat-label" data-i18n-key="stats.cards.1.label">提高任务完成率</div>
+                    <div class="stat-info" data-i18n-key="stats.cards.1.info">用户使用番茄工作法结合我们的专注模式，任务完成率提高了35%</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number" data-i18n-key="stats.cards.2.number">45%</div>
+                    <div class="stat-label" data-i18n-key="stats.cards.2.label">减轻眼部疲劳</div>
+                    <div class="stat-info" data-i18n-key="stats.cards.2.info">多种颜色模式和透明度选项帮助用户减轻45%的眼部疲劳</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number" data-i18n-key="stats.cards.3.number">60%</div>
+                    <div class="stat-label" data-i18n-key="stats.cards.3.label">提升专注持久度</div>
+                    <div class="stat-info" data-i18n-key="stats.cards.3.info">社交分享功能帮助用户将专注时间延长60%，更持久地保持高效状态</div>
+                </div>
+            </div>
+            
+            <div class="stats-graph">
+                <div class="graph-container">
+                    <canvas id="productivity-chart"></canvas>
+                </div>
+                <div class="graph-info">
+                    <h3 data-i18n-key="stats.graph.title">专注时间与工作效率关系</h3>
+                    <p data-i18n-key="stats.graph.description">数据显示，使用SuperBlackScreen的用户平均每天专注时间增加了2小时，工作效率提升了30%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 价格方案区域 -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n-key="pricing.title">选择适合您的方案</h2>
+                <p data-i18n-key="pricing.subtitle">无论是个人用户还是团队用户，我们都有合适的解决方案</p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <span data-i18n-key="pricing.toggle.monthly">按月付费</span>
+                <label class="switch">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span data-i18n-key="pricing.toggle.yearly">按年付费 <span class="save-badge" data-i18n-key="pricing.toggle.save">省20%</span></span>
+            </div>
+            
+            <div class="pricing-plans">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n-key="pricing.plans.free.name">免费版</h3>
+                        <div class="pricing-price">
+                            <span class="price" data-i18n-key="pricing.plans.free.price">¥0</span>
+                            <span class="period" data-i18n-key="pricing.plans.free.period">永久免费</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.free.features.0">基础黑屏和白屏模式</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.free.features.1">基本透明度调节</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.free.features.2">简单定时器功能</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.free.features.3">基础使用统计</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n-key="pricing.plans.free.features.4">无社交分享功能</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n-key="pricing.plans.free.features.5">无渐变效果</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n-key="pricing.plans.free.features.6">无番茄工作法</span></li>
+                            <li><i class="fas fa-times"></i> <span data-i18n-key="pricing.plans.free.features.7">无云端同步</span></li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#try-free" class="btn btn-outline btn-block" data-i18n-key="pricing.plans.free.cta">立即使用</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="pricing-tag" data-i18n-key="pricing.plans.pro.popular">最受欢迎</div>
+                    <div class="pricing-header">
+                        <h3 data-i18n-key="pricing.plans.pro.name">专业版</h3>
+                        <div class="pricing-price">
+                            <span class="price price-monthly" data-i18n-key="pricing.plans.pro.price_monthly">¥19</span>
+                            <span class="price price-yearly" data-i18n-key="pricing.plans.pro.price_yearly">¥15</span>
+                            <span class="period" data-i18n-key="pricing.plans.pro.period">每月</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.pro.features.0">所有免费版功能</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.pro.features.1">多种颜色选项</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.pro.features.2">高级透明度控制</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.pro.features.3">渐变效果</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.pro.features.4">番茄工作法</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.pro.features.5">社交分享功能</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.pro.features.6">详细数据统计和分析</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.pro.features.7">云端同步</span></li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#get-pro" class="btn btn-primary btn-block" data-i18n-key="pricing.plans.pro.cta">获取专业版</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n-key="pricing.plans.team.name">团队版</h3>
+                        <div class="pricing-price">
+                            <span class="price price-monthly" data-i18n-key="pricing.plans.team.price_monthly">¥49</span>
+                            <span class="price price-yearly" data-i18n-key="pricing.plans.team.price_yearly">¥39</span>
+                            <span class="period" data-i18n-key="pricing.plans.team.period">每月</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.team.features.0">所有专业版功能</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.team.features.1">团队协作功能</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.team.features.2">团队专注统计</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.team.features.3">团队目标设定</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.team.features.4">管理员控制面板</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.team.features.5">优先技术支持</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.team.features.6">API访问</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n-key="pricing.plans.team.features.7">自定义品牌</span></li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="#get-team" class="btn btn-outline btn-block" data-i18n-key="pricing.plans.team.cta">获取团队版</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-guarantee">
+                <i class="fas fa-shield-alt"></i>
+                <p data-i18n-key="pricing.guarantee">30天无条件退款保证 | 安全支付 | 不满意随时取消</p>
+            </div>
+            
+            <div class="pricing-faq">
+                <h3 data-i18n-key="pricing.faq.title">常见问题</h3>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4 data-i18n-key="pricing.faq.questions.0.q">如何升级到专业版或团队版？</h4>
+                        <p data-i18n-key="pricing.faq.questions.0.a">只需点击对应方案的按钮，完成简单的注册和支付流程，即可立即升级并享受高级功能。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-i18n-key="pricing.faq.questions.1.q">付费方案是否支持多设备使用？</h4>
+                        <p data-i18n-key="pricing.faq.questions.1.a">是的，所有付费方案都支持在多个设备上使用，并通过云同步保持数据一致。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-i18n-key="pricing.faq.questions.2.q">我可以随时取消订阅吗？</h4>
+                        <p data-i18n-key="pricing.faq.questions.2.a">是的，您可以随时在账户设置中取消订阅，取消后将继续享受当前订阅周期的服务，直到周期结束。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-i18n-key="pricing.faq.questions.3.q">团队版最多支持多少用户？</h4>
+                        <p data-i18n-key="pricing.faq.questions.3.a">团队版基础价格包含10个用户，如需更多用户，可以按每人¥5/月的价格添加（按年付费享受额外优惠）。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 免费试用注册区域 -->
+    <section id="try-free" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n-key="cta.title">立即开始提升您的专注力</h2>
+                <p data-i18n-key="cta.subtitle">免费注册并体验SuperBlackScreen的强大功能，提高工作效率，保护视力健康</p>
+                <form class="signup-form">
+                    <input type="email" data-i18n-key="cta.input_placeholder" placeholder="输入您的邮箱地址" required>
+                    <button type="submit" class="btn btn-primary" data-i18n-key="cta.button">免费注册</button>
+                </form>
+                <div class="cta-note">
+                    <p data-i18n-key="cta.note">无需信用卡 | 免费版永久使用 | 随时升级</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 信任标志区域 -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-content">
+                <h3 data-i18n-key="trust.title">受到信赖的专注工具</h3>
+                <div class="logos-grid">
+                    <div class="logo-item">
+                        <img src="img/company1.svg" alt="Company Logo">
+                    </div>
+                    <div class="logo-item">
+                        <img src="img/company2.svg" alt="Company Logo">
+                    </div>
+                    <div class="logo-item">
+                        <img src="img/company3.svg" alt="Company Logo">
+                    </div>
+                    <div class="logo-item">
+                        <img src="img/company4.svg" alt="Company Logo">
+                    </div>
+                    <div class="logo-item">
+                        <img src="img/company5.svg" alt="Company Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="img/logo.svg" alt="SuperBlackScreen Logo">
+                        <span>SuperBlackScreen</span>
+                    </div>
+                    <p class="footer-desc" data-i18n-key="footer.description">专注于提升工作/学习效率的多功能屏幕管理工具，帮助用户减少干扰、保护视力、提高专注力</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-qq"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-i18n-key="footer.columns.0">产品</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features" data-i18n-key="footer.links.product.0">功能</a></li>
+                        <li><a href="#pricing" data-i18n-key="footer.links.product.1">价格</a></li>
+                        <li><a href="#comparison" data-i18n-key="footer.links.product.2">对比</a></li>
+                        <li><a href="#try-free" data-i18n-key="footer.links.product.3">免费试用</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.product.4">下载客户端</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-i18n-key="footer.columns.1">支持</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n-key="footer.links.support.0">常见问题</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.support.1">帮助中心</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.support.2">联系我们</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.support.3">使用指南</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.support.4">开发者API</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-i18n-key="footer.columns.2">公司</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n-key="footer.links.company.0">关于我们</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.company.1">博客</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.company.2">加入我们</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.company.3">隐私政策</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.company.4">服务条款</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-i18n-key="footer.columns.3">资源</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n-key="footer.links.resources.0">专注力提升指南</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.resources.1">番茄工作法教程</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.resources.2">视力保护小贴士</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.resources.3">效率工具推荐</a></li>
+                        <li><a href="#" data-i18n-key="footer.links.resources.4">用户案例</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="language-selector">
+                    <select id="language-selector">
+                        <option value="en-US">English</option>
+                        <option value="zh-CN" selected>简体中文</option>
+                    </select>
+                </div>
+                <div class="copyright">
+                    <p data-i18n-key="footer.copyright">&copy; 2023 SuperBlackScreen. 保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="back-to-top" aria-label="回到顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

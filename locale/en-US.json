@@ -1,0 +1,390 @@
+{
+  "meta": {
+    "title": "SuperBlackScreen - Customizable Focus Tool with Social Sharing | Boost Productivity & Protect Vision",
+    "description": "SuperBlackScreen is a multi-functional screen management tool focused on enhancing work/study efficiency by providing customizable screen display modes that help users reduce distractions, protect vision, and share their focus experience."
+  },
+  "nav": {
+    "features": "Features",
+    "playground": "Try It",
+    "comparison": "Compare",
+    "painpoints": "Solutions",
+    "stats": "Data",
+    "pricing": "Pricing"
+  },
+  "hero": {
+    "title": "Focus on Work, Protect Vision, <span class=\"highlight\">Share Experience</span>",
+    "subtitle": "SuperBlackScreen is a new multi-functional screen management tool that helps you reduce distractions, protect vision, improve focus, and share your focus status with friends.",
+    "cta_primary": "Try It Now",
+    "cta_secondary": "Learn More",
+    "stats": {
+      "productivity": {
+        "number": "30%",
+        "text": "Productivity Increase"
+      },
+      "eye_strain": {
+        "number": "40%",
+        "text": "Less Eye Strain"
+      },
+      "users": {
+        "number": "10K+",
+        "text": "Active Users"
+      }
+    }
+  },
+  "features": {
+    "title": "Powerful Features Designed to Boost Focus and Protect Vision",
+    "subtitle": "Explore the comprehensive features of SuperBlackScreen to make your work and study experience more efficient and comfortable",
+    "cards": [
+      {
+        "title": "Multiple Screen Modes",
+        "description": "Provides black screen, color options, transparency adjustment, and gradient effects to meet different scenario needs."
+      },
+      {
+        "title": "Time Management",
+        "description": "Built-in timer, Pomodoro technique, and custom time periods to help you plan work and rest time scientifically."
+      },
+      {
+        "title": "Social Sharing",
+        "description": "Share focus status on social media, create focus groups, maintain focus and motivation with friends."
+      },
+      {
+        "title": "Data Analytics",
+        "description": "Record focus time, analyze focus habits, set goals and track completion for continuous improvement."
+      },
+      {
+        "title": "Cross-Platform",
+        "description": "Support Web, Windows, macOS, Linux, iOS and Android, stay focused anytime, anywhere."
+      },
+      {
+        "title": "Security & Privacy",
+        "description": "Local storage priority, encrypted cloud sync transmission, protecting your privacy and data security."
+      }
+    ]
+  },
+  "playground": {
+    "title": "Try SuperBlackScreen Now",
+    "subtitle": "Experience our core features directly in your browser without downloading",
+    "controls": {
+      "screen_mode": "Screen Mode",
+      "modes": {
+        "black": "Black",
+        "white": "White",
+        "blue": "Blue",
+        "green": "Green",
+        "gradient": "Gradient"
+      },
+      "opacity": "Opacity Adjustment",
+      "timer": {
+        "title": "Timer Settings",
+        "modes": {
+          "simple": "Simple Mode",
+          "advanced": "Advanced Mode",
+          "pomodoro": "Pomodoro Technique"
+        },
+        "presets": {
+          "5": "5 minutes",
+          "25": "25 minutes",
+          "50": "50 minutes"
+        },
+        "custom_minutes": "minutes",
+        "options": {
+          "show_countdown": "Show countdown",
+          "show_clock": "Show clock",
+          "show_message": "Show message text",
+          "custom_message": "Custom message text"
+        },
+        "start": {
+          "now": "Start now",
+          "after": "Start after",
+          "at": "Start at"
+        },
+        "end": {
+          "timer": "End when timer completes",
+          "after": "Duration",
+          "at": "End at"
+        },
+        "pomodoro": {
+          "work": "Work duration (minutes):",
+          "rest": "Break duration (minutes):",
+          "long_rest": "Long break duration (minutes):",
+          "cycles": "Work cycles:",
+          "status": "Ready to start",
+          "phase": {
+            "work": "Work phase",
+            "rest": "Short break phase",
+            "long_rest": "Long break phase"
+          },
+          "cycle": "Cycle"
+        },
+        "buttons": {
+          "start": "Start",
+          "advanced_start": "Start",
+          "start_pomodoro": "Start Pomodoro"
+        }
+      },
+      "share": {
+        "title": "Social Sharing",
+        "buttons": {
+          "share_status": "Share Focus Status",
+          "invite_friends": "Invite Friends to Focus Together"
+        },
+        "preview": "I'm using SuperBlackScreen, focusing on work!",
+        "platforms": {
+          "wechat": "WeChat",
+          "weibo": "Weibo",
+          "twitter": "Twitter",
+          "instagram": "Instagram",
+          "qq": "QQ"
+        }
+      },
+      "fullscreen": {
+        "enter": "Fullscreen Mode",
+        "exit": "Exit Fullscreen"
+      }
+    },
+    "preview_message": "Focus Mode Activated"
+  },
+  "comparison": {
+    "title": "Why Choose SuperBlackScreen?",
+    "subtitle": "Compare us with other focus tools on the market",
+    "features": {
+      "header": "Feature",
+      "color_options": "Multiple Color Options",
+      "opacity": "Opacity Adjustment",
+      "gradient": "Gradient Effects",
+      "timer": "Built-in Timer",
+      "pomodoro": "Pomodoro Technique",
+      "social_share": "Social Sharing",
+      "stats": "Data Analytics",
+      "cross_platform": "Cross-Platform Support"
+    },
+    "note": "* Based on market research data as of December 2023"
+  },
+  "painpoints": {
+    "title": "We Listen to Users",
+    "subtitle": "We provide perfect solutions for user pain points with existing solutions on the market",
+    "cards": [
+      {
+        "pain": {
+          "title": "Limited Functionality",
+          "description": "\"Existing black screen tools only offer a single color, unable to meet my needs in different scenarios.\""
+        },
+        "solution": {
+          "title": "Our Solution",
+          "description": "SuperBlackScreen provides black, white, blue, green and other color options, plus opacity adjustment and gradient effects to meet your visual needs in different environments."
+        }
+      },
+      {
+        "pain": {
+          "title": "Lack of Time Management",
+          "description": "\"I need a tool that helps me manage work and rest time, not just simple screen color changes.\""
+        },
+        "solution": {
+          "title": "Our Solution",
+          "description": "We've built-in timers, Pomodoro technique, and custom time settings to help you scientifically plan your work time, remind you to take breaks, and balance efficiency and health."
+        }
+      },
+      {
+        "pain": {
+          "title": "Lonely Focus Experience",
+          "description": "\"I feel lonely when focusing on work and wish I could maintain motivation and accountability with friends.\""
+        },
+        "solution": {
+          "title": "Our Solution",
+          "description": "SuperBlackScreen's innovative social sharing feature allows you to share your focus status, create focus groups, and maintain focus with friends, motivating each other."
+        }
+      },
+      {
+        "pain": {
+          "title": "Unable to Track Progress",
+          "description": "\"I have no way of knowing how long I've focused each day, nor can I see my improvement.\""
+        },
+        "solution": {
+          "title": "Our Solution",
+          "description": "We provide detailed focus time statistics and analysis to help you understand your focus patterns and habits, set goals and track progress for continuous improvement."
+        }
+      }
+    ],
+    "testimonial": {
+      "quote": "\"SuperBlackScreen has completely changed the way I work. The diverse screen modes meet my needs in different environments, the time management features help me stay efficient, and the social sharing function keeps me motivated with colleagues. It's the most comprehensive focus tool on the market!\"",
+      "author": "— Mark Johnson, Software Engineer"
+    }
+  },
+  "stats": {
+    "title": "Let the Data Speak",
+    "subtitle": "How SuperBlackScreen helps users improve focus and work efficiency",
+    "cards": [
+      {
+        "number": "40%",
+        "label": "Fewer Distractions",
+        "info": "Users report an average 40% reduction in distractions while working after using SuperBlackScreen"
+      },
+      {
+        "number": "35%",
+        "label": "Higher Task Completion",
+        "info": "Users experience a 35% increase in task completion rate when using Pomodoro technique with our focus modes"
+      },
+      {
+        "number": "45%",
+        "label": "Less Eye Strain",
+        "info": "Multiple color modes and opacity options help users reduce eye strain by 45%"
+      },
+      {
+        "number": "60%",
+        "label": "Longer Focus Duration",
+        "info": "Social sharing features help users extend focus time by 60%, maintaining high efficiency for longer periods"
+      }
+    ],
+    "graph": {
+      "title": "Relationship Between Focus Time and Work Efficiency",
+      "description": "Data shows that users using SuperBlackScreen increased their daily focus time by 2 hours on average, with a 30% improvement in work efficiency",
+      "before": "Focus Time Before Using",
+      "after": "Focus Time After Using",
+      "y_axis": "Focus Time (hours)",
+      "days": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+      }
+    }
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "We have suitable solutions for both individual users and teams",
+    "toggle": {
+      "monthly": "Pay Monthly",
+      "yearly": "Pay Yearly",
+      "save": "Save 20%"
+    },
+    "plans": {
+      "free": {
+        "name": "Free",
+        "price": "¥0",
+        "period": "Forever Free",
+        "features": [
+          "Basic black and white screen modes",
+          "Basic opacity adjustment",
+          "Simple timer function",
+          "Basic usage statistics",
+          "No social sharing features",
+          "No gradient effects",
+          "No Pomodoro technique",
+          "No cloud sync"
+        ],
+        "cta": "Start for Free"
+      },
+      "pro": {
+        "name": "Professional",
+        "price_monthly": "¥19",
+        "price_yearly": "¥15",
+        "period": "per month",
+        "popular": "Most Popular",
+        "features": [
+          "All Free plan features",
+          "Multiple color options",
+          "Advanced opacity control",
+          "Gradient effects",
+          "Pomodoro technique",
+          "Social sharing functionality",
+          "Detailed data statistics and analysis",
+          "Cloud synchronization"
+        ],
+        "cta": "Get Pro Version"
+      },
+      "team": {
+        "name": "Team",
+        "price_monthly": "¥49",
+        "price_yearly": "¥39",
+        "period": "per month",
+        "features": [
+          "All Pro version features",
+          "Team collaboration",
+          "Team focus statistics",
+          "Team goal setting",
+          "Admin dashboard",
+          "Priority technical support",
+          "API access",
+          "Custom branding"
+        ],
+        "cta": "Get Team Version"
+      }
+    },
+    "guarantee": "30-day money-back guarantee | Secure payment | Cancel anytime",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "q": "How do I upgrade to the Pro or Team version?",
+          "a": "Simply click the button for the corresponding plan, complete the simple registration and payment process, and you can immediately upgrade and enjoy advanced features."
+        },
+        {
+          "q": "Do paid plans support multiple devices?",
+          "a": "Yes, all paid plans support use on multiple devices and keep data consistent through cloud synchronization."
+        },
+        {
+          "q": "Can I cancel my subscription at any time?",
+          "a": "Yes, you can cancel your subscription at any time in account settings. After cancellation, you will continue to enjoy the current subscription cycle until it ends."
+        },
+        {
+          "q": "How many users does the Team version support?",
+          "a": "The Team version base price includes 10 users. For more users, you can add them at ¥5/month per person (with additional discounts for annual payment)."
+        }
+      ]
+    }
+  },
+  "cta": {
+    "try_free": "Free Trial",
+    "title": "Start Improving Your Focus Now",
+    "subtitle": "Register for free and experience the powerful features of SuperBlackScreen, increase work efficiency and protect eye health",
+    "input_placeholder": "Enter your email address",
+    "button": "Register for Free",
+    "note": "No credit card required | Free version forever | Upgrade anytime"
+  },
+  "trust": {
+    "title": "Trusted Focus Tool"
+  },
+  "footer": {
+    "description": "A multi-functional screen management tool focused on improving work/study efficiency, helping users reduce distractions, protect vision, and improve focus",
+    "columns": [
+      "Product",
+      "Support",
+      "Company",
+      "Resources"
+    ],
+    "links": {
+      "product": [
+        "Features",
+        "Pricing",
+        "Comparison",
+        "Free Trial",
+        "Download Client"
+      ],
+      "support": [
+        "FAQ",
+        "Help Center",
+        "Contact Us",
+        "User Guide",
+        "Developer API"
+      ],
+      "company": [
+        "About Us",
+        "Blog",
+        "Join Us",
+        "Privacy Policy",
+        "Terms of Service"
+      ],
+      "resources": [
+        "Focus Improvement Guide",
+        "Pomodoro Technique Tutorial",
+        "Vision Protection Tips",
+        "Productivity Tools",
+        "User Cases"
+      ]
+    },
+    "copyright": " 2023 SuperBlackScreen. All rights reserved."
+  }
+}

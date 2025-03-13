@@ -1,0 +1,390 @@
+{
+  "meta": {
+    "title": "SuperBlackScreen - 可分享的多功能专注工具 | 提高工作效率和保护视力",
+    "description": "SuperBlackScreen是一款专注于提升工作/学习效率的多功能屏幕管理工具，通过提供可定制的屏幕显示模式，帮助用户减少干扰、保护视力并支持社交分享功能。"
+  },
+  "nav": {
+    "features": "功能",
+    "playground": "试用",
+    "comparison": "对比",
+    "painpoints": "解决方案",
+    "stats": "数据",
+    "pricing": "价格"
+  },
+  "hero": {
+    "title": "专注工作，保护视力，<span class=\"highlight\">分享体验</span>",
+    "subtitle": "SuperBlackScreen是一款全新的多功能屏幕管理工具，通过可定制的屏幕模式，帮助您减少干扰、保护视力、提高专注力，还可以与朋友共享专注状态。",
+    "cta_primary": "立即体验",
+    "cta_secondary": "了解更多",
+    "stats": {
+      "productivity": {
+        "number": "30%",
+        "text": "提升工作效率"
+      },
+      "eye_strain": {
+        "number": "40%",
+        "text": "减少眼部疲劳"
+      },
+      "users": {
+        "number": "10K+",
+        "text": "活跃用户"
+      }
+    }
+  },
+  "features": {
+    "title": "专为提升专注力和保护视力设计的强大功能",
+    "subtitle": "探索SuperBlackScreen的全方位功能，让您的工作和学习体验更加高效、舒适",
+    "cards": [
+      {
+        "title": "多样化屏幕模式",
+        "description": "提供纯黑屏幕、多种颜色选项、透明度调节和渐变效果，满足不同场景需求。"
+      },
+      {
+        "title": "时间管理功能",
+        "description": "内置定时器、番茄工作法和自定义时间段，帮助您科学规划工作和休息时间。"
+      },
+      {
+        "title": "社交分享功能",
+        "description": "分享专注状态到社交媒体，创建专注小组，与朋友共同保持专注和动力。"
+      },
+      {
+        "title": "数据统计与分析",
+        "description": "记录专注时间，分析专注习惯，设定目标并追踪完成情况，持续改进。"
+      },
+      {
+        "title": "全平台兼容",
+        "description": "支持Web、Windows、macOS、Linux、iOS和Android，随时随地保持专注。"
+      },
+      {
+        "title": "安全与隐私",
+        "description": "用户数据本地存储优先，云同步加密传输，保护您的隐私和数据安全。"
+      }
+    ]
+  },
+  "playground": {
+    "title": "立即体验SuperBlackScreen",
+    "subtitle": "无需下载，直接在浏览器中试用我们的核心功能",
+    "controls": {
+      "screen_mode": "屏幕模式",
+      "modes": {
+        "black": "黑屏",
+        "white": "白屏",
+        "blue": "蓝屏",
+        "green": "绿屏",
+        "gradient": "渐变"
+      },
+      "opacity": "透明度调节",
+      "timer": {
+        "title": "定时设置",
+        "modes": {
+          "simple": "简单模式",
+          "advanced": "高级模式",
+          "pomodoro": "番茄工作法"
+        },
+        "presets": {
+          "5": "5分钟",
+          "25": "25分钟",
+          "50": "50分钟"
+        },
+        "custom_minutes": "分钟",
+        "options": {
+          "show_countdown": "显示倒计时",
+          "show_clock": "显示时钟",
+          "show_message": "显示提示文本",
+          "custom_message": "自定义提示文本"
+        },
+        "start": {
+          "now": "立即开始",
+          "after": "延时开始",
+          "at": "指定时间开始"
+        },
+        "end": {
+          "timer": "计时结束",
+          "after": "持续时间",
+          "at": "指定时间结束"
+        },
+        "pomodoro": {
+          "work": "工作时长 (分钟):",
+          "rest": "休息时长 (分钟):",
+          "long_rest": "长休息时长 (分钟):",
+          "cycles": "工作周期:",
+          "status": "准备开始",
+          "phase": {
+            "work": "工作阶段",
+            "rest": "短休息阶段",
+            "long_rest": "长休息阶段"
+          },
+          "cycle": "周期"
+        },
+        "buttons": {
+          "start": "开始",
+          "advanced_start": "开始",
+          "start_pomodoro": "开始番茄工作法"
+        }
+      },
+      "share": {
+        "title": "社交分享",
+        "buttons": {
+          "share_status": "分享专注状态",
+          "invite_friends": "邀请朋友一起专注"
+        },
+        "preview": "我正在使用SuperBlackScreen，专注工作中！",
+        "platforms": {
+          "wechat": "微信",
+          "weibo": "微博",
+          "twitter": "推特",
+          "instagram": "Instagram",
+          "qq": "QQ"
+        }
+      },
+      "fullscreen": {
+        "enter": "全屏模式",
+        "exit": "退出全屏"
+      }
+    },
+    "preview_message": "专注模式已启动"
+  },
+  "comparison": {
+    "title": "为什么选择SuperBlackScreen？",
+    "subtitle": "我们与市场上其他专注工具的对比",
+    "features": {
+      "header": "功能",
+      "color_options": "多种颜色选项",
+      "opacity": "透明度调节",
+      "gradient": "渐变效果",
+      "timer": "内置定时器",
+      "pomodoro": "番茄工作法",
+      "social_share": "社交分享功能",
+      "stats": "数据统计",
+      "cross_platform": "全平台支持"
+    },
+    "note": "* 基于2023年12月市场研究数据"
+  },
+  "painpoints": {
+    "title": "我们倾听用户声音",
+    "subtitle": "针对市场上现有解决方案的用户痛点，我们提供完美解决方案",
+    "cards": [
+      {
+        "pain": {
+          "title": "功能单一",
+          "description": "\"现有的黑屏工具只提供单一颜色，无法满足我不同场景的需求。\""
+        },
+        "solution": {
+          "title": "我们的解决方案",
+          "description": "SuperBlackScreen提供黑、白、蓝、绿等多种颜色选项，还支持透明度调节和渐变效果，满足您在不同环境下的视觉需求。"
+        }
+      },
+      {
+        "pain": {
+          "title": "缺乏时间管理",
+          "description": "\"我需要一个能帮助我管理工作和休息时间的工具，而不只是简单的屏幕颜色改变。\""
+        },
+        "solution": {
+          "title": "我们的解决方案",
+          "description": "我们内置了定时器、番茄工作法和自定义时间设置，帮助您科学规划工作时间，提醒适时休息，均衡效率与健康。"
+        }
+      },
+      {
+        "pain": {
+          "title": "孤独的专注体验",
+          "description": "\"专注工作时感到孤独，希望能与朋友一起保持动力和责任感。\""
+        },
+        "solution": {
+          "title": "我们的解决方案",
+          "description": "SuperBlackScreen独创社交分享功能，让您可以分享专注状态，创建专注小组，与朋友共同保持专注，互相激励。"
+        }
+      },
+      {
+        "pain": {
+          "title": "无法追踪进度",
+          "description": "\"我无法知道自己每天专注了多长时间，也无法看到自己的改进。\""
+        },
+        "solution": {
+          "title": "我们的解决方案",
+          "description": "我们提供详细的专注时间统计和分析功能，帮助您了解自己的专注模式和习惯，设定目标并追踪进度，持续改进。"
+        }
+      }
+    ],
+    "testimonial": {
+      "quote": "\"SuperBlackScreen完全改变了我的工作方式。多样化的屏幕模式满足了我在不同环境下的需求，时间管理功能帮助我保持高效，而社交分享功能则让我和同事一起保持专注动力。这是目前市场上最全面的专注工具！\"",
+      "author": "— 张明，软件工程师"
+    }
+  },
+  "stats": {
+    "title": "用数据说话",
+    "subtitle": "SuperBlackScreen如何帮助用户提高专注力和工作效率",
+    "cards": [
+      {
+        "number": "40%",
+        "label": "减少干扰次数",
+        "info": "用户报告使用SuperBlackScreen后，工作中被干扰的次数平均减少40%"
+      },
+      {
+        "number": "35%",
+        "label": "提高任务完成率",
+        "info": "用户使用番茄工作法结合我们的专注模式，任务完成率提高了35%"
+      },
+      {
+        "number": "45%",
+        "label": "减轻眼部疲劳",
+        "info": "多种颜色模式和透明度选项帮助用户减轻45%的眼部疲劳"
+      },
+      {
+        "number": "60%",
+        "label": "提升专注持久度",
+        "info": "社交分享功能帮助用户将专注时间延长60%，更持久地保持高效状态"
+      }
+    ],
+    "graph": {
+      "title": "专注时间与工作效率关系",
+      "description": "数据显示，使用SuperBlackScreen的用户平均每天专注时间增加了2小时，工作效率提升了30%",
+      "before": "使用前专注时间",
+      "after": "使用后专注时间",
+      "y_axis": "专注时间 (小时)",
+      "days": {
+        "monday": "周一",
+        "tuesday": "周二",
+        "wednesday": "周三",
+        "thursday": "周四",
+        "friday": "周五",
+        "saturday": "周六",
+        "sunday": "周日"
+      }
+    }
+  },
+  "pricing": {
+    "title": "选择适合您的方案",
+    "subtitle": "无论是个人用户还是团队用户，我们都有合适的解决方案",
+    "toggle": {
+      "monthly": "按月付费",
+      "yearly": "按年付费",
+      "save": "省20%"
+    },
+    "plans": {
+      "free": {
+        "name": "免费版",
+        "price": "¥0",
+        "period": "永久免费",
+        "features": [
+          "基础黑屏和白屏模式",
+          "基本透明度调节",
+          "简单定时器功能",
+          "基础使用统计",
+          "无社交分享功能",
+          "无渐变效果",
+          "无番茄工作法",
+          "无云端同步"
+        ],
+        "cta": "立即使用"
+      },
+      "pro": {
+        "name": "专业版",
+        "price_monthly": "¥19",
+        "price_yearly": "¥15",
+        "period": "每月",
+        "popular": "最受欢迎",
+        "features": [
+          "所有免费版功能",
+          "多种颜色选项",
+          "高级透明度控制",
+          "渐变效果",
+          "番茄工作法",
+          "社交分享功能",
+          "详细数据统计和分析",
+          "云端同步"
+        ],
+        "cta": "获取专业版"
+      },
+      "team": {
+        "name": "团队版",
+        "price_monthly": "¥49",
+        "price_yearly": "¥39",
+        "period": "每月",
+        "features": [
+          "所有专业版功能",
+          "团队协作功能",
+          "团队专注统计",
+          "团队目标设定",
+          "管理员控制面板",
+          "优先技术支持",
+          "API访问",
+          "自定义品牌"
+        ],
+        "cta": "获取团队版"
+      }
+    },
+    "guarantee": "30天无条件退款保证 | 安全支付 | 不满意随时取消",
+    "faq": {
+      "title": "常见问题",
+      "questions": [
+        {
+          "q": "如何升级到专业版或团队版？",
+          "a": "只需点击对应方案的按钮，完成简单的注册和支付流程，即可立即升级并享受高级功能。"
+        },
+        {
+          "q": "付费方案是否支持多设备使用？",
+          "a": "是的，所有付费方案都支持在多个设备上使用，并通过!cloud同步保持数据一致。"
+        },
+        {
+          "q": "我可以随时取消订阅吗？",
+          "a": "是的，您可以随时在账户设置中取消订阅，取消后将继续享受当前订阅周期的服务，直到周期结束。"
+        },
+        {
+          "q": "团队版最多支持多少用户？",
+          "a": "团队版基础价格包含10个用户，如需更多用户，可以按每人¥5/月的价格添加（按年付费享受额外优惠）。"
+        }
+      ]
+    }
+  },
+  "cta": {
+    "try_free": "免费试用",
+    "title": "立即开始提升您的专注力",
+    "subtitle": "免费注册并体验SuperBlackScreen的强大功能，提高工作效率，保护视力健康",
+    "input_placeholder": "输入您的邮箱地址",
+    "button": "免费注册",
+    "note": "无需信用卡 | 免费版永久使用 | 随时升级"
+  },
+  "trust": {
+    "title": "受到信赖的专注工具"
+  },
+  "footer": {
+    "description": "专注于提升工作/学习效率的多功能屏幕管理工具，帮助用户减少干扰、保护视力、提高专注力",
+    "columns": [
+      "产品",
+      "支持",
+      "公司",
+      "资源"
+    ],
+    "links": {
+      "product": [
+        "功能",
+        "价格",
+        "对比",
+        "免费试用",
+        "下载客户端"
+      ],
+      "support": [
+        "常见问题",
+        "帮助中心",
+        "联系我们",
+        "使用指南",
+        "开发者API"
+      ],
+      "company": [
+        "关于我们",
+        "博客",
+        "加入我们",
+        "隐私政策",
+        "服务条款"
+      ],
+      "resources": [
+        "专注力提升指南",
+        "番茄工作法教程",
+        "视力保护小贴士",
+        "效率工具推荐",
+        "用户案例"
+      ]
+    },
+    "copyright": " 2023 SuperBlackScreen. 保留所有权利."
+  }
+}
